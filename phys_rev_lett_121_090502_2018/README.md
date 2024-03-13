@@ -6,4 +6,9 @@ P. V. Klimov, J. Kelly, Z. Chen, M. Neeley, A. Megrant, B. Burkett, R. Barends, 
 [arXiv:1809.01043 (2018)](https://arxiv.org/pdf/1809.01043.pdf)
 
 ### Contents:
-- Energy-relaxation time versus qubit frequency versus time for 5 qubits.
+- Energy-relaxation time versus qubit frequency versus time data for 5 qubits
+  - Each qubit's data is in a directory labelled `qA_B` and is packaged as three `.csv` files:
+    - `freqs_GHz_mesh.csv` - Two-dimensional mesh of qubit operating frequencies, in GHz.
+    - `times_min_mesh.csv` - Two-dimensional mesh of times over which each qubit was measured, in minutes.
+    - `T1s_us_mesh.csv` - Two-dimensional mesh of energy-relaxation times (T1s) corresponding to the frequencies and times above.
+- Script `data_visualizer.ipynb` for loading and visualizing the data corresponding to Supplementary Figure S1.
